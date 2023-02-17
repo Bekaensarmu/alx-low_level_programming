@@ -6,12 +6,14 @@
   * main - entry point 
   * Return: Always 0 (Seccess)
   */
-
 int main(void)
 
 {
 
 	int d, p, q;
+
+	srand(time(0));
+	d = rand() - RAND_MAX / 2;
 
 	for (d = '0'; d < '9'; d++)
 	{
