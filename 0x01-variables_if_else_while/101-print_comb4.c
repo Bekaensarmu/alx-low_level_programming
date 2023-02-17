@@ -1,13 +1,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+
  /**
   * main - entry point 
   * Return: Always 0 (Seccess)
   */
+
 int main(void)
+
 {
-	int d,p, q;
+
+	int d, p, q;
+
 	for (d = '0'; d < '9'; d++)
 	{
 	for (p = d + 1; p <= '9'; p++)
