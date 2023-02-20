@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - entry point 
+ * main - entry point
  * Return: Always 0 (success)
  */
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	for (d = '0'; d < '9'; d++)
 	{
-	
+
 	for (p = d + 1; p <= '9'; p++)
 	{
 
