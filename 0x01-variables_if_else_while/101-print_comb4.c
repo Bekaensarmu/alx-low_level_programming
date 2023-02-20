@@ -19,27 +19,29 @@
 int main(void)
 {
 
-	int d;
-	int p;
-	int q = 0;
+	int c;
+	int d = 0;
 
-	for (d = '0'; d < '9'; d++)
+while (d < 10)
 	{
-		putchar(d);
-	}
-	for (p = d + 1; p <= '9'; p++)
+		c = 0;
+	
+	while (c < 10)
 	{
-		putchar(p);
-	}
-	for (q = p + 1; q <= '9'; q++)
+		if (d != c && d < c)
+		{
+	putchar('0' + d);
+	putchar('0' + c);
+
+	if (c+d != 17)
 	{
-		putchar(q);
-	}
-	if ((p != d) != q)
-	{
-	if (d == '7' && p == '8')
 	putchar(',');
 	putchar(' ');
+	}
+		}
+		c++;
+	}
+	d++;
 	}
 	putchar('\n');
 
