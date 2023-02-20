@@ -2,7 +2,7 @@
 
 /**
  * main - A program that print the of various computer types
- * Return 0 (Seccess)
+ * Return: 0 (Seccess)
  */
 int main(void)
 
