@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
  /**
-  * main - Entry point
   * Description: Write a program that prints all possible
   * different combinations of three digits
   * Numbers must be separated by ,, followed by a space
@@ -39,7 +38,6 @@ int main(void)
 	if ((p != d) != q)
 	{
 	if (d == '7' && p == '8')
-	continue;
 	putchar(',');
 	putchar(' ');
 	}
