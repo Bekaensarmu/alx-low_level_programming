@@ -3,8 +3,8 @@
 #include <time.h>
 
  /**
-  * main - entry point 
-  * Return: Always 0 (Seccess)
+  * main - entry point
+  * Return: 0 (Seccess)
   */
 int main(void)
 
@@ -17,23 +17,23 @@ int main(void)
 
 	for (d = '0'; d < '9'; d++)
 	{
+		putchar(d);
+	}
 	for (p = d + 1; p <= '9'; p++)
 	{
+		putchar(p);
+	}
 	for (q = p + 1; q <= '9'; q++)
 	{
+		putchar(q);
+	}
 	if ((p != d) != q)
 	{
-	putchar(d);
-	putchar(p);
-	putchar(q);
 	if (d == '7' && p == '8')
 	continue;
 	putchar(',');
 	putchar(' ');
 	}
-	}
-	}
-	}
 	putchar('\n');
-	 return (0);
+	return (0);
 }
