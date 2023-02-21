@@ -20,7 +20,7 @@ int main(void)
 			j = k - j;
 			printf(", %d", k);
 		}
-		++i:
+		++i;
 	}
 	printf("\n");
 	return (0);
