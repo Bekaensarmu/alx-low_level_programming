@@ -18,7 +18,7 @@ int main(void)
 		{
 			k += j;
 			j = k - j;
-			printf("\n");
+			printf(", %d", k);
 		}
 		++i:
 	}
