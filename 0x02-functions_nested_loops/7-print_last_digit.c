@@ -3,7 +3,7 @@
 /**
  * print_last_digit - Print the last digit of a number
  * @n: The numer to be treated
- * Retunrn: Value of the last difit of number
+ * Return: Value of the last difit of number
  */
 
 int print_last_digit(int n)
