@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mul - Multiplication two integers
+ * mul - Multiplies two integers
  * @x: The first number to multiply
  * @y: The second number to multiply with first number
  */
