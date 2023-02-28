@@ -2,16 +2,17 @@
 #include <stdio.h>
 
 /**
- *  _isupper - check the code.
- *
- * Return: Always 0.
+ *  _isupper - check if a letter is upper
+ *  @x: the number to be checked
+ *  Return: 1 for upper letter or 0 for any else
  */
-int _isupper(int c)
+
+int _isupper(int x)
 {
 
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+	if (x >= 65 && x <= 98)
+	{
+		return (1);
+	}
+	return (0);
 }

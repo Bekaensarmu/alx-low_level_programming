@@ -6,12 +6,16 @@
  * Return: 0 or 1
  */
 
-int _isdigit(int c)
+int main()
 {
+    char c;
 
-if (c >= '0' && c <= '9')
-return (1);
-else
-return (0);
+    printf("Enter a character: ");
+    scanf("%c",&c);
+
+    if (isdigit(c) == 0)
+         printf("%c is not a digit.",c);
+    else
+         printf("%c is a digit.",c);
+    return 0;
 }
-~
