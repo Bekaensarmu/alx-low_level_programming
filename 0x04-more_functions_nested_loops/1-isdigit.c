@@ -1,21 +1,17 @@
 #include "main.h"
 
 /**
- * _isdigit - check if number are 9 - 0
- * @c: char to be checked
- * Return: 0 or 1
+ * _isdigit - check if a character is a digit 
+ * @x: the number to be checked
+ * Return: 1 for a character tha dwill be a digit or 0 for any else
  */
 
-int main()
+int _isdigit(int x)
 {
-    char c;
 
-    printf("Enter a character: ");
-    scanf("%c",&c);
-
-    if (isdigit(c) == 0)
-         printf("%c is not a digit.",c);
-    else
-         printf("%c is a digit.",c);
-    return 0;
+if (x >=48 && x <= 57)
+{
+return (1);
+}
+return 0;
 }
