@@ -4,22 +4,24 @@
  * print_binary - prints the binary equivalent of a decimal number
  * @n: number to print in binary
  */
+void print_binary(unsigned long int n)
+{
+	int i, count = 0;
+	unsigned long int current;
 
-void print_binary(unsigned long int n) {
-    int num_bits = sizeof(n) * 8;  // Number of bits in the unsigned long int type
+	for (i = 63; i >= 0; i--)
+	{
+		current = n >> i;
 
-    // Start from the most significant bit and print each bit using bitwise operations
-    for (int i = num_bits - 1; i >= 0; i--) {
-        unsigned long int mask = 1UL << i;  // Create a mask to extract each bit
-
-        // Check if the current bit is set or not
-        if (n & mask) {
-            std::cout << "1";
-        } else {
-            std::cout << "0";
-        }
-    }
-
-    std::cout << std::endl;
+		if (current & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+			_putchar('0');
+	}
+	if (!count)
+		_putchar('0');
 }
 
